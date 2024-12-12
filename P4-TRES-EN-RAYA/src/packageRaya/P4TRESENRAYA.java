@@ -39,10 +39,48 @@ public class P4TRESENRAYA {
             // Pedir al jugador que elija una casilla
             System.out.println(jugadorNombre + ", es tu turno. Elige una casilla (1-9): ");
             int casilla = scanner.nextInt();
-        } 
-		
-		
-		
+            
+            //PARTE3
+
+            
+            if (casilla < 1 || casilla > 9) {
+                System.out.println("Número inválido. Elige un número entre 1 y 9.");
+                continue;
+            }
+        
+            int fila = 0;
+            int columna = 0;
+
+            if (casilla == 1) {
+                fila = 0; columna = 0;
+            } else if (casilla == 2) {
+                fila = 0; columna = 1;
+            } else if (casilla == 3) {
+                fila = 0; columna = 2;
+            } else if (casilla == 4) {
+                fila = 1; columna = 0;
+            } else if (casilla == 5) {
+                fila = 1; columna = 1;
+            } else if (casilla == 6) {
+                fila = 1; columna = 2;
+            } else if (casilla == 7) {
+                fila = 2; columna = 0;
+            } else if (casilla == 8) {
+                fila = 2; columna = 1;
+            } else if (casilla == 9) {
+                fila = 2; columna = 2;
+            }
+            
+            if (tablero[fila][columna] != '-') {
+                System.out.println("¡Esa casilla ya está ocupada! Elige otra.");
+                continue;
+            }
+        
+       
+        
+        }
+        
+ 	
 		
 	}
 
