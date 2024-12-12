@@ -22,7 +22,24 @@ public class P4TRESENRAYA {
                 {'-', '-', '-'}
             };
 		
-		
+		//PARTE2
+
+        int turnos = 0; 
+        char jugadorActual = 'X'; 
+        String jugadorNombre = jugador1; 
+        
+        //Bucle para los turnos de los jugadores
+        while (turnos < 9) {
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    System.out.print(tablero[i][j] + " ");
+                }
+                System.out.println();
+            }
+            // Pedir al jugador que elija una casilla
+            System.out.println(jugadorNombre + ", es tu turno. Elige una casilla (1-9): ");
+            int casilla = scanner.nextInt();
+        } 
 		
 		
 		
