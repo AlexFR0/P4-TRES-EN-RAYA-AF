@@ -107,13 +107,24 @@ public class P4TRESENRAYA {
                 return; // Sale del programa si hay un ganador
             }
 
+            //PARTE5
             
-            
+         // Cambiar de jugador
+            if (jugadorActual == 'X') {
+                jugadorActual = 'O';
+                jugadorNombre = jugador2;
+            } else {
+                jugadorActual = 'X';
+                jugadorNombre = jugador1;
+            }
         }
+
+        // Si no hay ganador después de 9 turnos
+        System.out.println("¡Es un empate!");
+
         
-        
- 	
-		
+        }
+	
 	}
 
-}
+
