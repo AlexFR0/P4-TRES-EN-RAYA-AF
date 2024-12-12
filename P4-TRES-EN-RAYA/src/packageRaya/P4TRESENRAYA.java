@@ -97,7 +97,16 @@ public class P4TRESENRAYA {
                 }
             }
             
-            
+         // Comprobar diagonales
+            if (tablero[0][0] == jugadorActual && tablero[1][1] == jugadorActual && tablero[2][2] == jugadorActual) {
+                System.out.println("¡Felicidades " + jugadorNombre + ", has ganado!");
+                return; // Sale del programa si hay un ganador
+            }
+            if (tablero[0][2] == jugadorActual && tablero[1][1] == jugadorActual && tablero[2][0] == jugadorActual) {
+                System.out.println("¡Felicidades " + jugadorNombre + ", has ganado!");
+                return; // Sale del programa si hay un ganador
+            }
+
             
             
         }
