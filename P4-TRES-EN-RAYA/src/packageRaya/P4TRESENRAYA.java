@@ -75,10 +75,33 @@ public class P4TRESENRAYA {
                 System.out.println("¡Esa casilla ya está ocupada! Elige otra.");
                 continue;
             }
-        
-       
-        
+            
+            
+        //PARTE4
+            tablero[fila][columna] = jugadorActual;
+            turnos++;
+            
+            // Comprobar filas
+            for (int i = 0; i < 3; i++) {
+                if (tablero[i][0] == jugadorActual && tablero[i][1] == jugadorActual && tablero[i][2] == jugadorActual) {
+                    System.out.println("¡Felicidades " + jugadorNombre + ", has ganado!");
+                    return; 
+                }
+            }
+            
+         // Comprobar columnas
+            for (int i = 0; i < 3; i++) {
+                if (tablero[0][i] == jugadorActual && tablero[1][i] == jugadorActual && tablero[2][i] == jugadorActual) {
+                    System.out.println("¡Felicidades " + jugadorNombre + ", has ganado!");
+                    return; 
+                }
+            }
+            
+            
+            
+            
         }
+        
         
  	
 		
